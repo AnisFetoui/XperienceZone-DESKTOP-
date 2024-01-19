@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="765.0" prefWidth="1068.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Ajout_recController">
+   <children>
+      <Button fx:id="ajoutR" layoutX="921.0" layoutY="709.0" mnemonicParsing="false" onAction="#validerAjout" prefHeight="40.0" prefWidth="84.0" style="-fx-background-color: #87cb28; -fx-cursor: hand;" styleClass="add-btn" stylesheets="file:/C:/Users/LENOVO%20GAMING/Downloads/style.css" text="Valider">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="814.0" layoutY="709.0" mnemonicParsing="false" onAction="#annulerR" prefHeight="40.0" prefWidth="84.0" style="-fx-background-color: #28282B; -fx-cursor: hand;" styleClass="add-btn" stylesheets="file:/C:/Users/LENOVO%20GAMING/Downloads/style.css" text="Annuler" textFill="#e8dddd">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#28282b" height="126.0" layoutY="7.0" stroke="BLACK" strokeType="INSIDE" width="1078.0" />
+      <Text fill="#e1dddd" layoutX="363.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter une Réclamation" underline="true">
+         <font>
+            <Font name="Copperplate Gothic Light" size="31.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="142.0" fitWidth="190.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Reclamation/Projet4SE1/logo1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="captchaImageView" fitHeight="172.0" fitWidth="296.0" layoutX="698.0" layoutY="424.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow />
+         </effect></ImageView>
+      <TextField fx:id="captchaTextField" layoutX="755.0" layoutY="599.0" styleClass="shadow" stylesheets="@style.css" />
+      <Label fx:id="captchaErrorLabel" alignment="CENTER" layoutX="669.0" layoutY="637.0" prefHeight="21.0" prefWidth="352.0" textFill="#f20b0b" />
+      <Label layoutX="721.0" layoutY="561.0" text="Veuillez écrire les caractères ci-dessus" />
+      <Line endX="11.0" endY="-102.0" layoutX="658.0" layoutY="796.0" startX="11.0" startY="-399.0" />
+      <Line endX="282.0" endY="-329.0" layoutX="738.0" layoutY="726.0" startX="-69.5" startY="-329.0" />
+      <Line endX="12.0" endY="-97.0" layoutX="1008.0" layoutY="791.0" startX="11.5" startY="-394.5" />
+      <Line endX="282.5" endY="-331.5" layoutX="738.0" layoutY="1026.0" startX="-69.5" startY="-331.5" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="205.0" layoutX="32.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" width="992.0">
+         <effect>
+            <BoxBlur />
+         </effect>
+      </Rectangle>
+      <TextField fx:id="emailR" layoutX="223.0" layoutY="215.0" prefHeight="31.0" prefWidth="231.0" promptText="Votre_adresse@exemple.com" styleClass="shadow" stylesheets="@style.css" />
+      <DatePicker fx:id="dateR" layoutX="223.0" layoutY="284.0" prefHeight="31.0" prefWidth="231.0" promptText="format(mm/jj/yyyy)" styleClass="shadow" stylesheets="@style.css" />
+      <ComboBox fx:id="typeR" layoutX="755.0" layoutY="211.0" prefHeight="31.0" prefWidth="250.0" styleClass="shadow" stylesheets="@style.css" />
+      <TextArea fx:id="detR" layoutX="755.0" layoutY="265.0" prefHeight="57.0" prefWidth="250.0" promptText="écrire ici ..." styleClass="shadow" stylesheets="@style.css" />
+      <Text layoutX="81.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email :">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="70.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date de plainte :">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="562.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type de réclamation :">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="562.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Détails de la plainte :" wrappingWidth="157.08252005651593">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Text>
+      <Hyperlink fx:id="corr" layoutX="720.0" layoutY="327.0" onAction="#corriger" text="Vouler vous activer la correction de texte ?" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="306.0" layoutX="32.0" layoutY="393.0" stroke="BLACK" strokeType="INSIDE" width="609.0">
+         <effect>
+            <BoxBlur />
+         </effect>
+      </Rectangle>
+      <TextField fx:id="refR" editable="false" layoutX="323.0" layoutY="632.0" prefHeight="31.0" prefWidth="139.0" styleClass="shadow" stylesheets="@style.css" />
+      <Text layoutX="95.0" layoutY="652.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Référence de l'objet choisi :">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="59.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veuillez choisir l'objet de votre réclamation puis appuier sur choisir :" wrappingWidth="499.46826171875">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="choixref" layoutX="525.0" layoutY="630.0" mnemonicParsing="false" onAction="#handleChoisirButton" prefHeight="34.0" prefWidth="75.0" style="-fx-background-color: #87cb28; -fx-cursor: hand;" styleClass="add-btn" stylesheets="file:/C:/Users/LENOVO%20GAMING/Downloads/style.css" text="Choisir">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="choixACT" layoutX="252.0" layoutY="470.0" mnemonicParsing="false" onAction="#actualiserListViewA" prefHeight="34.0" prefWidth="169.0" style="-fx-background-color: #87cb28; -fx-cursor: hand;" styleClass="add-btn" stylesheets="file:/C:/Users/LENOVO%20GAMING/Downloads/style.css" text="activité">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="choixEVE" layoutX="72.0" layoutY="470.0" mnemonicParsing="false" onAction="#actualiserListViewE" prefHeight="34.0" prefWidth="175.0" style="-fx-background-color: #87cb28; -fx-cursor: hand;" styleClass="add-btn" stylesheets="file:/C:/Users/LENOVO%20GAMING/Downloads/style.css" text="évenement">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="choixPROD" layoutX="429.0" layoutY="470.0" mnemonicParsing="false" onAction="#actualiserListViewP" prefHeight="34.0" prefWidth="169.0" style="-fx-background-color: #87cb28; -fx-cursor: hand;" styleClass="add-btn" stylesheets="file:/C:/Users/LENOVO%20GAMING/Downloads/style.css" text="Produit">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Button>
+      <HBox layoutX="77.0" layoutY="513.0" prefHeight="94.0" prefWidth="519.0" styleClass="shadow" stylesheets="@style.css">
+         <children>
+            <ListView fx:id="listEVE" prefHeight="142.0" prefWidth="190.0" />
+            <ListView fx:id="listACT" prefHeight="142.0" prefWidth="190.0" />
+            <ListView fx:id="listPROD" prefHeight="172.0" prefWidth="184.0" />
+         </children>
+      </HBox>
+      <Label alignment="CENTER" layoutX="144.0" layoutY="140.0" prefHeight="27.0" prefWidth="788.0" text="Veuiller remplir tous les champs ci-dessous" textFill="#4a4545">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

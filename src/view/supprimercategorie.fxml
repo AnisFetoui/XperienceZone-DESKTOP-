@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="642.0" prefWidth="989.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SupprimercategorieController">
+   <children>
+      <BorderPane layoutY="-3.0" prefHeight="693.0" prefWidth="1042.0" style="-fx-background-color: white;" stylesheets="@style.css" AnchorPane.bottomAnchor="-4.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-3.0">
+         <top>
+            <HBox prefHeight="100.0" prefWidth="952.0" style="-fx-background-color: #354230;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="menu" onMouseClicked="#onmenuclicked" text="MENU" textFill="#2cd734">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="50.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="menuclose" onMouseClicked="#onmenuclickedclose" text="ME.." textFill="#56c93a">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="-50.0" top="50.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ImageView fitHeight="81.0" fitWidth="149.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="50.0" top="10.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../image/385496021_292791893519238_8577172701520959440_n.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="produit" mnemonicParsing="false" onAction="#produit" style="-fx-background-color: #354230;" text="Produit" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="100.0" top="40.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#evenement" style="-fx-background-color: #354230;" text="Evenements" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="20.0" top="40.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#activite" style="-fx-background-color: #354230;" text="Activités" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="20.0" top="40.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#reclamation" style="-fx-background-color: #354230;" text="Réclamations" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="20.0" top="40.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#channel" style="-fx-background-color: #354230;" text="Channel" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="20.0" top="40.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </top>
+         <bottom>
+            <HBox prefHeight="104.0" prefWidth="1026.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="supp" mnemonicParsing="false" onAction="#deleteselectedact" prefHeight="31.0" prefWidth="194.0" styleClass="btn1" stylesheets="@style.css" text="supprimer">
+                     <HBox.margin>
+                        <Insets left="350.0" />
+                     </HBox.margin></Button>
+                  <ImageView fitHeight="29.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/380267188_1363539364578928_2753920115917350912_n.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="-40.0" top="2.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+         </bottom>
+         <right>
+            <TableView fx:id="tableview" maxHeight="510.0" maxWidth="537.0" prefHeight="382.0" prefWidth="518.0" BorderPane.alignment="CENTER">
+               <columns>
+                  <TableColumn fx:id="idcategorie_col" prefWidth="93.0" text="Id categorie" />
+                  <TableColumn fx:id="nomcateg_col" prefWidth="117.0" text="nom categorie " />
+                  <TableColumn fx:id="des_col" prefWidth="178.0" text="description categorie" />
+                  <TableColumn fx:id="type" prefWidth="148.0" text="type categorie" />
+               </columns>
+               <BorderPane.margin>
+                  <Insets top="40.0" />
+               </BorderPane.margin>
+            </TableView>
+         </right>
+         <left>
+            <VBox fx:id="slider" prefHeight="495.0" prefWidth="237.0" styleClass="slider-back" stylesheets="@style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="actualiser" mnemonicParsing="false" onAction="#afficher" prefHeight="31.0" prefWidth="140.0" styleClass="btn" stylesheets="@style.css" text="actualiser">
+                     <VBox.margin>
+                        <Insets top="100.0" />
+                     </VBox.margin></Button>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/380510015_290329247260811_7658397812206885559_n.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="110.0" top="-25.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Button fx:id="btn_retour" mnemonicParsing="false" onAction="#Retour" prefHeight="31.0" prefWidth="140.0" styleClass="btn" stylesheets="@style.css" text="Retour">
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin></Button>
+                  <ImageView fitHeight="27.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/images%20(1).png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="110.0" top="-25.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="710.0" prefWidth="1157.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Home_recController">
+   <children>
+      <ListView fx:id="list_rec" layoutX="345.0" layoutY="266.0" prefHeight="270.0" prefWidth="716.0" styleClass="shadow" stylesheets="@style.css" />
+      <Button fx:id="modifB" layoutX="957.0" layoutY="554.0" mnemonicParsing="false" onAction="#modifierReclamation" prefHeight="34.0" prefWidth="80.0" style="-fx-background-color: #87cb28 #87cb28; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="Modifier">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="supprimerRB" layoutX="828.0" layoutY="554.0" mnemonicParsing="false" onAction="#supprimerReclamation" prefHeight="34.0" prefWidth="108.0" style="-fx-background-color: #28282B; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="Supprimer" textFill="#e8dddd">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="actualiserR" layoutX="932.0" layoutY="215.0" mnemonicParsing="false" onAction="#actualiserListViewR" prefHeight="34.0" prefWidth="108.0" style="-fx-background-color: #C0C0C0; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="Actualiser">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Button>
+      <Hyperlink fx:id="voirStatistiquesButton" layoutX="329.0" layoutY="542.0" onAction="#handleVoirStatistiquesButton" text="consulter les statistiques des réclamation ? " underline="true" />
+      <HBox prefHeight="142.0" prefWidth="1157.0" style="-fx-background-color: #354230;">
+         <children>
+            <Label fx:id="menu" onMouseClicked="#onmenuclicked" text="MENU" textFill="#41c93a">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="50.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="menuclose" onMouseClicked="#onmenuclickedclose" text="ME..." textFill="#65f229">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="50.0" />
+               </HBox.margin>
+            </Label>
+            <ImageView fitHeight="142.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Reclamation/Projet4SE1/logo1.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="100.0" />
+               </HBox.margin>
+            </ImageView>
+            <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="RECLAMATIONS" wrappingWidth="308.1945676803589">
+               <font>
+                  <Font name="Copperplate Gothic Light" size="33.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="150.0" top="50.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+      </HBox>
+      <VBox fx:id="slider" layoutX="-2.0" layoutY="141.0" prefHeight="569.0" prefWidth="227.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#retourHome" prefHeight="34.0" prefWidth="105.0" style="-fx-background-color: #28282B; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="Retour" textFill="#e8dddd">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="trait" mnemonicParsing="false" onAction="#trait_home" prefHeight="34.0" prefWidth="108.0" style="-fx-background-color: #87cb28; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="Traitement">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

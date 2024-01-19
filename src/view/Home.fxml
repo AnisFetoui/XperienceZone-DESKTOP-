@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="944.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.HomeController">
+   <children>
+      <AnchorPane prefHeight="506.0" prefWidth="946.0">
+         <children>
+            <AnchorPane layoutY="-2.0" prefHeight="112.0" prefWidth="946.0" style="-fx-background-color: #354230;" stylesheets="@../css/dashboardDesign.css">
+               <children>
+                  <ImageView fitHeight="118.0" fitWidth="159.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/logopidev.png" />
+                     </image>
+                  </ImageView>
+                  <HBox alignment="CENTER" layoutX="220.0" layoutY="23.0" prefHeight="81.0" prefWidth="682.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#produit" prefHeight="57.0" prefWidth="99.0" style="-fx-background-color: #354230;" text="Produits" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#activite" prefHeight="57.0" prefWidth="111.0" style="-fx-background-color: #354230;" text="Activités" textFill="#e3e8e2">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#evenement" prefHeight="57.0" prefWidth="123.0" style="-fx-background-color: #354230;" text="Evenements" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#reclamation" prefHeight="57.0" prefWidth="129.0" style="-fx-background-color: #354230;" text="Reclamations" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#GotoAcceuil" prefHeight="34.0" prefWidth="82.0" style="-fx-background-color: #354230;" text="channel" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <Label fx:id="menuclose" layoutX="14.0" layoutY="97.0" onMouseClicked="#onmenuclicked" prefHeight="31.0" prefWidth="40.0" text="menu" textFill="#f5f2f2" />
+                  <Label fx:id="menuclose" layoutX="117.0" layoutY="102.0" onMouseClicked="#onmenuclickedclose" prefHeight="21.0" prefWidth="67.0" text="menuclose" textFill="#e4e4e4" />
+               </children>
+               <styleClass>
+                  <String fx:value="top-form" />
+                  <String fx:value="nav-form" />
+               </styleClass>
+            </AnchorPane>
+            <AnchorPane layoutY="129.0" prefHeight="358.0" prefWidth="176.0" styleClass="nav-form" stylesheets="@../css/dashboardDesign.css">
+               <children>
+                  <Separator layoutX="3.0" layoutY="354.0" prefWidth="200.0" />
+                  <VBox fx:id="slider" layoutY="2.0" prefHeight="351.0" prefWidth="163.0">
+                     <children>
+                        <Label prefHeight="41.0" prefWidth="139.0" text="          Welcome Admin" />
+                        <Separator prefHeight="0.0" prefWidth="141.0" />
+                        <Button mnemonicParsing="false" onAction="#accueil" prefHeight="38.0" prefWidth="84.0" styleClass="nav-btn" stylesheets="@../css/dashboardDesign.css" text=" Accueil">
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#channel" prefHeight="38.0" prefWidth="82.0" styleClass="nav-btn" stylesheets="@../css/dashboardDesign.css" text=" Channel">
+                           <VBox.margin>
+                              <Insets top="40.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#inbox" prefHeight="37.0" prefWidth="80.0" styleClass="nav-btn" stylesheets="@../css/dashboardDesign.css" text="  Inbox">
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="root" layoutX="242.0" layoutY="124.0" prefHeight="343.0" prefWidth="654.0" styleClass="shadow" stylesheets="@../css/dashboardDesign.css" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

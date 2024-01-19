@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="476.0" prefWidth="619.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ConnexionUserController">
+   <children>
+      <TextField id="tf:connexion:email" fx:id="tf_connexion_email" layoutX="355.0" layoutY="277.0" prefHeight="23.0" prefWidth="200.0" promptText="email">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Button id="btn:connexion:connecter" fx:id="btn_connexion_connecter" layoutX="275.0" layoutY="409.0" mnemonicParsing="false" onAction="#cnx" prefHeight="34.0" prefWidth="160.0" style="-fx-background-color: #a9cb56; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="Log In" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="399.0" layoutY="334.0" prefHeight="22.0" prefWidth="72.0" text="Forgot your">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="318.0" layoutY="360.0" prefHeight="22.0" prefWidth="214.0" text="I don't have an account, I'm creating">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button id="btn:connexion:inscri" fx:id="btn_connexion_inscri" layoutX="529.0" layoutY="358.0" mnemonicParsing="false" onAction="#inscri" prefHeight="25.0" prefWidth="48.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="ONE" textFill="#a9cb56" underline="true">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button id="btn:connexion:mdpoub" fx:id="btn_connexion_mdpoub" layoutX="459.0" layoutY="332.0" mnemonicParsing="false" onAction="#oublier" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="password" textFill="RED" underline="true">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="539.0" layoutY="333.0" prefHeight="22.0" prefWidth="17.0" text="?">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="tf_connexion_mdp" layoutX="355.0" layoutY="307.0" prefHeight="25.0" prefWidth="200.0" promptText="password" />
+      <ImageView fitHeight="174.0" fitWidth="228.0" layoutX="368.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@profile.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="281.0" fitWidth="365.0" layoutX="-11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@385496021_292791893519238_8577172701520959440_n.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="274.0" layoutY="309.0" prefHeight="22.0" prefWidth="72.0" text="Password :" underline="true">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="294.0" layoutY="278.0" prefHeight="22.0" prefWidth="48.0" text="Email  :" underline="true">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

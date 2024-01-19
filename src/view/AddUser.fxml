@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AddUserController">
+   <children>
+      <AnchorPane prefHeight="406.0" prefWidth="215.0" style="-fx-background-color: #354230;">
+         <children>
+            <ImageView fitHeight="202.0" fitWidth="291.0" layoutX="3.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@385496021_292791893519238_8577172701520959440_n.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="47.0" layoutY="297.0" prefHeight="43.0" prefWidth="170.0" text="Mr ADMIN" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="340.0" prefHeight="43.0" prefWidth="177.0" text="Add this person !!" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="614.0" prefWidth="485.0">
+         <children>
+            <Label layoutX="19.0" layoutY="25.0" prefHeight="22.0" prefWidth="99.0" text="Username">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="147.0" prefHeight="22.0" prefWidth="109.0" text="Confirm password">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="108.0" prefHeight="22.0" prefWidth="79.0" text="Password">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="67.0" prefHeight="22.0" prefWidth="66.0" text="Email">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="191.0" prefHeight="22.0" prefWidth="31.0" text="Age">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </Label>
+            
+            <Label layoutX="28.0" layoutY="257.0" prefHeight="22.0" prefWidth="66.0" text="Gender">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField id="tf_inscri_ident" fx:id="tf_ajout_ident" layoutX="139.0" layoutY="25.0" prefHeight="23.0" prefWidth="170.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </TextField>
+            <TextField id="tf_inscri_email" fx:id="tf_ajout_email" layoutX="139.0" layoutY="67.0" prefHeight="23.0" prefWidth="170.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </TextField>
+            <Button id="btn_inscri_inscri" fx:id="btn_ajout_ajout" layoutX="69.0" layoutY="485.0" mnemonicParsing="false" onAction="#ajout" prefHeight="34.0" prefWidth="140.0" style="-fx-background-color: #a9cb56; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="Save">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Button>
+            <Line endX="100.0" endY="267.0" layoutX="-100.0" layoutY="346.0" startX="100.0" startY="-346.0" />
+            <TextField id="tf_inscri_age" fx:id="tf_ajout_age" layoutX="139.0" layoutY="191.0" prefHeight="23.0" prefWidth="66.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </TextField>
+            <ComboBox fx:id="cb_ajout_sx" layoutX="139.0" layoutY="255.0" prefHeight="25.0" prefWidth="170.0" />
+            <Button fx:id="Add_image_button" layoutX="23.0" layoutY="374.0" mnemonicParsing="false" onAction="#add_image_action" prefHeight="34.0" prefWidth="109.0" style="-fx-background-color: #354230; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="Add picture" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="ImagePreviw" fitHeight="92.0" fitWidth="156.0" layoutX="172.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true" />
+            <Button id="btn_inscri_inscri" fx:id="btn_ajout_retour" layoutX="239.0" layoutY="485.0" mnemonicParsing="false" onAction="#Retour" prefHeight="34.0" prefWidth="140.0" style="-fx-background-color: #354230; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="tf_ajout_mdp" layoutX="139.0" layoutY="106.0" prefHeight="25.0" prefWidth="170.0" />
+            <PasswordField fx:id="tf_ajout_cfrmmdp" layoutX="139.0" layoutY="146.0" prefHeight="25.0" prefWidth="170.0" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="imageLabel" prefHeight="34.0" prefWidth="71.0" visible="false" />
+   </children>
+</HBox>

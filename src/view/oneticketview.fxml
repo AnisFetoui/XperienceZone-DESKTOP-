@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" onMouseClicked="#onclick" prefHeight="427.0" prefWidth="287.0" stylesheets="@../utils/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.oneticketviewController">
+   <children>
+      <ImageView fx:id="photo" fitHeight="108.0" fitWidth="125.0" layoutX="95.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../utils/ticket.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="num_ticket" layoutX="165.0" layoutY="241.0" prefHeight="26.0" prefWidth="83.0" text="Quantite">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="categorie" layoutX="165.0" layoutY="297.0" prefHeight="26.0" prefWidth="132.0" text="categorie">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="243.0" prefHeight="21.0" prefWidth="90.0" text="Quantité">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font></Label>
+      <Label layoutX="37.0" layoutY="300.0" text="categorie:">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font></Label>
+      <Label fx:id="prix" layoutX="182.0" layoutY="352.0" prefHeight="26.0" prefWidth="125.0" text="prix">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="nom_ev" layoutX="182.0" layoutY="134.0" prefHeight="26.0" prefWidth="132.0" text="nom">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="136.0" prefHeight="21.0" prefWidth="132.0" text="Nom evenement :">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font></Label>
+      <Label layoutX="116.0" layoutY="354.0" prefHeight="21.0" prefWidth="53.0" text="prix:">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font></Label>
+      <Label layoutX="41.0" layoutY="189.0" prefHeight="21.0" prefWidth="83.0" text="lieu :">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lieu_event" layoutX="174.0" layoutY="186.0" prefHeight="26.0" prefWidth="142.0" text="lieu_event">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Label>
+      <HBox layoutX="7.0" layoutY="5.0" prefHeight="100.0" prefWidth="200.0" />
+   </children>
+   <styleClass>
+      <String fx:value="fruit-item" />
+      <String fx:value="shadow" />
+   </styleClass>
+</AnchorPane>

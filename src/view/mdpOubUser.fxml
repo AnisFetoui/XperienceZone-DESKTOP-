@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MdpOubUserController">
+   <children>
+      <TextField id="tf_mdpoub_email" fx:id="tf_mdpoub_email" layoutX="123.0" layoutY="169.0" prefHeight="31.0" prefWidth="355.0" />
+      <Label layoutX="160.0" layoutY="52.0" text="Reset your password">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="246.0" layoutY="308.0" prefHeight="27.0" prefWidth="74.0" text="Back to ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Line endX="266.0" layoutX="285.0" layoutY="292.0" startX="-226.0" />
+      <Button id="btn_mdpoub_cnx" fx:id="btn_mdpoub_cnx" layoutX="319.0" layoutY="306.0" mnemonicParsing="false" onAction="#retour" prefHeight="27.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Log in" textFill="#a9cb56" underline="true">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="123.0" layoutY="142.0" prefHeight="27.0" prefWidth="160.0" text="Your Email">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button id="btn_mdpoub_env" fx:id="btn_mdpoub_env" layoutX="225.0" layoutY="223.0" mnemonicParsing="false" onAction="#btnCodeAction" prefHeight="34.0" prefWidth="160.0" style="-fx-background-color: #a9cb56; -fx-cursor: hand;" text="Send code">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

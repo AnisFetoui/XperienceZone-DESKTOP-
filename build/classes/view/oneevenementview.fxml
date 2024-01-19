@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorcolor" onMouseClicked="#onclick" prefHeight="435.0" prefWidth="304.0" stylesheets="@../utils/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.oneevenementviewController">
+   <children>
+      <ImageView fx:id="photo" fitHeight="115.0" fitWidth="125.0" layoutX="95.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../utils/evenement.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="nom" layoutX="137.0" layoutY="155.0" prefHeight="26.0" prefWidth="144.0" text="nom">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="description" layoutX="129.0" layoutY="205.0" prefHeight="26.0" prefWidth="132.0" text="description">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="157.0" prefHeight="21.0" prefWidth="90.0" text="Nom :" textFill="#96c22d">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font></Label>
+      <Label layoutX="27.0" layoutY="207.0" prefHeight="21.0" prefWidth="77.0" text="Description:" textFill="#96c22d">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font></Label>
+      <Label layoutX="31.0" layoutY="348.0" prefHeight="21.0" prefWidth="83.0" text="Lieu:" textFill="#96c22d">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font></Label>
+      <Label fx:id="date" layoutX="137.0" layoutY="250.0" prefHeight="26.0" prefWidth="125.0" text="date">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="heure" layoutX="141.0" layoutY="301.0" prefHeight="26.0" prefWidth="118.0" text="heure">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lieu" layoutX="141.0" layoutY="348.0" prefHeight="26.0" prefWidth="108.0" text="lieu">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="303.0" prefHeight="21.0" prefWidth="83.0" text="Heure:" textFill="#96c22d">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font></Label>
+      <Label layoutX="31.0" layoutY="252.0" prefHeight="21.0" prefWidth="83.0" text="Date :" textFill="#96c22d">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font></Label>
+      <Label layoutX="23.0" layoutY="389.0" prefHeight="21.0" prefWidth="134.0" text="Nb_participants: " textFill="#96c22d">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font></Label>
+      <Label fx:id="nb_participant" layoutX="141.0" layoutY="386.0" prefHeight="26.0" prefWidth="144.0" text="nb_participants">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Label>
+   </children>
+   <styleClass>
+      <String fx:value="fruit-item" />
+      <String fx:value="shadow" />
+   </styleClass>
+</AnchorPane>

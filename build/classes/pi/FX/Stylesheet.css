@@ -1,0 +1,10 @@
+.side-bar{
+    -fx-background-color: #CA3E58;
+}
+.siderbar-btn{
+    -fx-background-color: transparent;
+}
+.siderbar-btn:hover{
+    -fx-background-color: #D56579;
+}
+

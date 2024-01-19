@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.reclamation.HomeAdminController">
+   <children>
+      <HBox fx:id="navbar" alignment="CENTER_LEFT" prefHeight="156.0" prefWidth="1271.0" spacing="50.0" style="-fx-background-color: #28282B;">
+         <children>
+            <ImageView fx:id="home_btn" fitHeight="108.0" fitWidth="122.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/LENOVO%20GAMING/OneDrive/Desktop/proj/Projet4SE1/logo1.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="produit_btn" text="Produits" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="evenement_btn" text="Evenements" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="activité_btn" text="Activités" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Reclamation_btn" onMousePressed="#Go_Reclamations" style="-fx-cursor: hand;" text="Reclamations" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Channel_btn" text="Channel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="profile_btn" fitHeight="44.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" translateX="230.0">
+               <image>
+                  <Image url="@cadenas.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="dc_btn" text="Déconnecter" textFill="WHITE" translateX="210.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox fx:id="bottom_content" layoutX="20.0" layoutY="745.0" prefHeight="80.0" prefWidth="1200.0" />
+      <ImageView fitHeight="553.0" fitWidth="751.0" layoutX="267.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/LENOVO%20GAMING/OneDrive/Desktop/proj/Projet4SE1/logo1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

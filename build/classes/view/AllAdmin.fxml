@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="741.0" prefWidth="1140.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AllAdminController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="694.0" prefWidth="1123.0">
+         <children>
+            <AnchorPane id="AnchorPane" layoutX="162.0" prefHeight="777.0" prefWidth="996.0">
+               <children>
+                  <AnchorPane layoutX="652.0" layoutY="239.0" prefHeight="162.0" prefWidth="298.0" style="-fx-background-color: #a9cb56; -fx-background-radius: 10px; -fx-border-color: #454368; -fx-border-radius: 10px;">
+                     <children>
+                        <Label layoutX="82.0" layoutY="23.0" text="Chat Management">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Channel_btn" layoutX="125.0" layoutY="91.0" mnemonicParsing="false" onAction="#go_channel" prefHeight="44.0" prefWidth="88.0" style="-fx-background-color: #354230; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="start" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="305.0" layoutY="238.0" prefHeight="162.0" prefWidth="290.0" style="-fx-background-color: #a9cb56; -fx-background-radius: 10px; -fx-border-color: #454368; -fx-border-radius: 10px;">
+                     <children>
+                        <Label layoutX="43.0" layoutY="14.0" text="Products Management">
+                           <font>
+                              <Font name="System Bold" size="21.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="produit_btn" layoutX="112.0" layoutY="93.0" mnemonicParsing="false" onAction="#go_produits" prefHeight="44.0" prefWidth="88.0" style="-fx-background-color: #354230; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="start" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="652.0" layoutY="37.0" prefHeight="162.0" prefWidth="290.0" style="-fx-background-color: #a9cb56; -fx-background-radius: 10px; -fx-border-color: #454368; -fx-border-radius: 10px;">
+                     <children>
+                        <Button fx:id="Reclamation_btn" layoutX="112.0" layoutY="93.0" mnemonicParsing="false" onAction="#Go_Reclamations" prefHeight="44.0" prefWidth="88.0" style="-fx-background-color: #354230; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="start" textFill="WHITE" />
+                        <Label layoutX="32.0" layoutY="20.0" text="Reclamation Management">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="305.0" layoutY="36.0" prefHeight="162.0" prefWidth="290.0" style="-fx-background-color: #a9cb56; -fx-background-radius: 10px; -fx-border-color: #454368; -fx-border-radius: 10px;">
+                     <children>
+                        <Label layoutX="37.0" layoutY="16.0" text="Users Management">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="User_btn" layoutX="112.0" layoutY="93.0" mnemonicParsing="false" onAction="#go_User" prefHeight="44.0" prefWidth="88.0" style="-fx-background-color: #354230; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="start" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="664.0" layoutY="437.0" prefHeight="162.0" prefWidth="290.0" style="-fx-background-color: #a9cb56; -fx-background-radius: 10px; -fx-border-color: #454368; -fx-border-radius: 10px;">
+                     <children>
+                        <Label layoutX="40.0" layoutY="14.0" text="Events Management">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="evenement_btn" layoutX="106.0" layoutY="93.0" mnemonicParsing="false" onAction="#go_evenements" prefHeight="44.0" prefWidth="88.0" style="-fx-background-color: #354230; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="start" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="305.0" layoutY="439.0" prefHeight="162.0" prefWidth="290.0" style="-fx-background-color: #a9cb56; -fx-background-radius: 10px; -fx-border-color: #454368; -fx-border-radius: 10px;">
+                     <children>
+                        <Label layoutX="32.0" layoutY="14.0" text="Activities Management">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="activité_btn" layoutX="100.0" layoutY="93.0" mnemonicParsing="false" onAction="#go_activités" prefHeight="44.0" prefWidth="88.0" style="-fx-background-color: #354230; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="start" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="-10.0" layoutY="-12.0" prefHeight="794.0" prefWidth="301.0" style="-fx-background-color: #354230;">
+               <children>
+                  <ImageView fitHeight="247.0" fitWidth="366.0" layoutX="-15.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@385496021_292791893519238_8577172701520959440_n.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="dc_btn" graphicTextGap="10.0" layoutX="41.0" layoutY="642.0" mnemonicParsing="false" onAction="#Se_deconnecter" prefHeight="44.0" prefWidth="204.0" style="-fx-background-color: #a9cb56; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="Logout" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="43.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

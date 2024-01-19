@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="684.0" prefWidth="837.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Modif_traitController">
+   <children>
+      <Button fx:id="modifMT" layoutX="759.0" layoutY="618.0" mnemonicParsing="false" onAction="#validerModificationT" prefHeight="38.0" prefWidth="84.0" style="-fx-background-color: #87cb28; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="Modifier">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="annulerMT" layoutX="647.0" layoutY="618.0" mnemonicParsing="false" onAction="#annulerModification" prefHeight="38.0" prefWidth="84.0" style="-fx-background-color: #28282B; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="Annuler" textFill="#e8dddd">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#28282b" height="126.0" layoutX="-23.0" layoutY="8.0" stroke="BLACK" strokeType="INSIDE" width="896.0" />
+      <Text fill="#fff9f9" layoutX="270.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifier un traitement" underline="true">
+         <font>
+            <Font name="Copperplate Gothic Light" size="31.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="142.0" fitWidth="190.0" layoutX="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Reclamation/Projet4SE1/logo1.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="389.0" layoutX="57.0" layoutY="199.0" stroke="BLACK" strokeType="INSIDE" width="760.0">
+         <effect>
+            <BoxBlur />
+         </effect>
+      </Rectangle>
+      <TextField fx:id="refTM" disable="true" editable="false" layoutX="378.0" layoutY="244.0" styleClass="shadow" stylesheets="@style.css" />
+      <DatePicker fx:id="dateTM" layoutX="379.0" layoutY="297.0" promptText="format(mm/jj/yyyy)" styleClass="shadow" stylesheets="@style.css" />
+      <ComboBox fx:id="typeRTM" disable="true" layoutX="378.0" layoutY="407.0" prefHeight="31.0" prefWidth="305.0" styleClass="shadow" stylesheets="@style.css" />
+      <ComboBox fx:id="statTM" layoutX="378.0" layoutY="348.0" prefHeight="31.0" prefWidth="187.0" styleClass="shadow" stylesheets="@style.css" />
+      <TextArea fx:id="resumeTM" layoutX="379.0" layoutY="463.0" prefHeight="80.0" prefWidth="345.0" promptText="écrire ici ..." styleClass="shadow" stylesheets="@style.css" />
+      <Text layoutX="148.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Référence de l'objet :">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="148.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date de réclamation :">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="153.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type de réclamation :">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="198.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status :">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="152.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Résumé de la plainte :">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Text>
+      <Label alignment="CENTER" layoutX="43.0" layoutY="154.0" prefHeight="27.0" prefWidth="788.0" text="Veuiller remplir tous les champs ci-dessous" textFill="#4a4545">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorme" prefHeight="470.0" prefWidth="786.0" stylesheets="@../util/style_1.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ajouterevenementController">
+   <children>
+      <ImageView fitHeight="115.0" fitWidth="119.0" layoutX="331.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../util/evenement.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="219.0" text="ajouter evenement">
+         <font>
+            <Font name="Cambria" size="42.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nom" layoutX="69.0" layoutY="114.0" prefHeight="33.0" prefWidth="159.0" promptText="nom" stylesheets="@../util/style_1.css">
+         <styleClass>
+            <String fx:value="search-box" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </TextField>
+      <Button layoutX="459.0" layoutY="408.0" mnemonicParsing="false" onAction="#annulerdescription" prefHeight="39.0" prefWidth="174.0" style="-fx-background-color: #96c22d;" stylesheets="@../util/style_1.css" text="annuler">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="add-btn" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </Button>
+      <Button layoutX="126.0" layoutY="408.0" mnemonicParsing="false" onAction="#ajouterevenement" prefHeight="18.0" prefWidth="187.0" style="-fx-background-color: #96c22d;" stylesheets="@../util/style_1.css" text="ajouter">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="add-btn" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </Button>
+      <TextField fx:id="organizateur" layoutX="516.0" layoutY="182.0" prefHeight="39.0" prefWidth="159.0" promptText="organisateur" stylesheets="@../util/style_1.css">
+         <styleClass>
+            <String fx:value="search-box" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </TextField>
+      <TextField fx:id="heure" layoutX="69.0" layoutY="257.0" prefHeight="39.0" prefWidth="159.0" promptText="heure" stylesheets="@../util/style_1.css">
+         <styleClass>
+            <String fx:value="search-box" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </TextField>
+      <TextField fx:id="lieu" layoutX="516.0" layoutY="111.0" prefHeight="39.0" prefWidth="159.0" promptText="lieu" stylesheets="@../util/style_1.css">
+         <styleClass>
+            <String fx:value="search-box" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </TextField>
+      <TextField fx:id="description" alignment="CENTER" layoutX="516.0" layoutY="317.0" prefHeight="65.0" prefWidth="218.0" promptText="description" stylesheets="@../util/style_1.css">
+         <styleClass>
+            <String fx:value="search-box" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </TextField>
+      <DatePicker fx:id="date1" layoutX="69.0" layoutY="182.0" prefHeight="33.0" prefWidth="159.0" promptText="date" stylesheets="@../util/style_1.css">
+         <styleClass>
+            <String fx:value="add-btn" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </DatePicker>
+      <Button layoutX="697.0" layoutY="254.0" mnemonicParsing="false" onAction="#upload" prefHeight="33.0" prefWidth="75.0" stylesheets="@../util/style_1.css" text="upload" textFill="#828282">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <styleClass>
+            <String fx:value="add-btn" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </Button>
+      <TextField fx:id="image" layoutX="516.0" layoutY="251.0" prefHeight="39.0" prefWidth="159.0" promptText="image" stylesheets="@../util/style_1.css">
+         <styleClass>
+            <String fx:value="search-box" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </TextField>
+      <TextField fx:id="nb_par" layoutX="69.0" layoutY="343.0" prefHeight="33.0" prefWidth="159.0" promptText="nb participants" stylesheets="@../util/style_1.css">
+         <styleClass>
+            <String fx:value="search-box" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </TextField>
+      <Separator layoutX="392.0" layoutY="196.0" orientation="VERTICAL" prefHeight="200.0" />
+   </children>
+   <styleClass>
+      <String fx:value="fruit-item" />
+      <String fx:value="shadow" />
+   </styleClass>
+</AnchorPane>

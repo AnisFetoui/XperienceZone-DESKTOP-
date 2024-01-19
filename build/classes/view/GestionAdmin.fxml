@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="693.0" prefWidth="1254.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.GestionAdminController">
+   <children>
+      <ImageView fitHeight="259.0" fitWidth="279.0" layoutX="-6.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@385496021_292791893519238_8577172701520959440_n.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tv_users" layoutX="253.0" layoutY="208.0" prefHeight="392.0" prefWidth="904.0">
+         <columns>
+            <TableColumn fx:id="col_username" prefWidth="137.0" text="Username" />
+            <TableColumn fx:id="col_email" prefWidth="179.0" text="Email" />
+            <TableColumn fx:id="col_mdp" prefWidth="151.0" text="Password" />
+            <TableColumn fx:id="col_role" prefWidth="119.0" text="Role" />
+            <TableColumn fx:id="ColumnId" minWidth="0.0" prefWidth="0.0" text="Column X" visible="false" />
+            <TableColumn fx:id="col_age" prefWidth="69.0" text="Age" />
+            <TableColumn fx:id="col_sexe" prefWidth="123.0" text="Gender" />
+            <TableColumn fx:id="col_img" prefWidth="123.0" text="Picture" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnDeconnecter" layoutX="1074.0" layoutY="108.0" mnemonicParsing="false" onAction="#btnDeconnecterAction" prefHeight="31.0" prefWidth="137.0" style="-fx-background-color: #354230; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="btnAjouter" layoutX="74.0" layoutY="478.0" mnemonicParsing="false" onAction="#btnAjouterAction" prefHeight="31.0" prefWidth="121.0" style="-fx-background-color: #354230; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="Add User" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="btnSupp" layoutX="73.0" layoutY="586.0" mnemonicParsing="false" onAction="#btnSuppAction" prefHeight="27.0" prefWidth="121.0" style="-fx-background-color: #354230; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="Delete User" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="btnModif" layoutX="73.0" layoutY="536.0" mnemonicParsing="false" onAction="#btnModifAction" prefHeight="27.0" prefWidth="121.0" style="-fx-background-color: #354230; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="Modify User" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="btnActualiser" layoutX="1074.0" layoutY="154.0" mnemonicParsing="false" onAction="#btnActualiserAction" prefHeight="31.0" prefWidth="137.0" style="-fx-background-color: #354230; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="Refresh" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font></Button>
+      <TextField fx:id="tf_adm_rech" layoutX="580.0" layoutY="124.0" onAction="#searchauto" prefHeight="31.0" prefWidth="251.0" promptText="Choosing the criterion first" />
+      <ChoiceBox fx:id="cb_sortButton" layoutX="60.0" layoutY="297.0" prefWidth="150.0" />
+      <Button fx:id="btnSort" layoutX="73.0" layoutY="247.0" mnemonicParsing="false" onAction="#sortData" prefHeight="31.0" prefWidth="121.0" style="-fx-background-color: #354230; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="Sort with" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnFiltre" layoutX="75.0" layoutY="358.0" mnemonicParsing="false" onAction="#filtreData" prefHeight="31.0" prefWidth="121.0" style="-fx-background-color: #354230; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="Filter by" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="cb_btnFiltre" layoutX="60.0" layoutY="407.0" prefWidth="150.0" />
+      <ComboBox fx:id="searchAttributeComboBox" layoutX="580.0" layoutY="169.0" prefWidth="150.0" />
+      <Label layoutX="354.0" layoutY="124.0" prefHeight="31.0" prefWidth="209.0" text="Do your research" textFill="#7c9a29">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnExcel" layoutX="1068.0" layoutY="613.0" mnemonicParsing="false" onAction="#export" prefHeight="31.0" prefWidth="150.0" style="-fx-background-color: #354230; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="Import EXCEL" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="548.0" layoutY="23.0" prefHeight="44.0" prefWidth="365.0" text="Users Management" textFill="#7c9a29" underline="true">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="38.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

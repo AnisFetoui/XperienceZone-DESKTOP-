@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="697.0" prefWidth="1117.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AjouterController">
+   <children>
+      <ImageView fitHeight="698.0" fitWidth="1123.0" layoutX="-1.0" pickOnBounds="true" />
+      <BorderPane />
+      <Text fill="#74da39" layoutX="119.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter Categorie">
+         <font>
+            <Font name="Book Antiqua" size="36.0" />
+         </font>
+      </Text>
+      <TextField fx:id="DescCat" layoutX="856.0" layoutY="324.0" opacity="0.6" />
+      <TextField fx:id="NomCat" layoutX="856.0" layoutY="231.0" opacity="0.6" />
+      <Button fx:id="AddBtn" layoutX="520.0" layoutY="590.0" mnemonicParsing="false" onAction="#AddCategorie" onMouseClicked="#AddCategorie" prefHeight="31.0" prefWidth="148.0" styleClass="btn1" stylesheets="@style.css" text="Ajouter" />
+      <ChoiceBox fx:id="choicefx" layoutX="856.0" layoutY="429.0" onInputMethodTextChanged="#AddCategorie" opacity="0.6" prefHeight="31.0" prefWidth="187.0" />
+      <Text fill="#463f3f" layoutX="496.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom de la Categorie" textAlignment="CENTER" wrappingWidth="270.125">
+         <font>
+            <Font name="Book Antiqua" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#403737" layoutX="520.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description de la categorie">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#393636" layoutX="520.0" layoutY="452.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type de Catégorie">
+         <font>
+            <Font name="Book Antiqua" size="24.0" />
+         </font>
+      </Text>
+      <HBox prefHeight="110.0" prefWidth="1123.0" style="-fx-background-color: #354230;">
+         <children>
+            <Label fx:id="menu" onMouseClicked="#onmenuclicked" text="MENU" textFill="#4fe135">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" top="50.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="menuclose" onMouseClicked="#onmenuclickedclose" text="ME..." textFill="#6cee38">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="-50.0" top="50.0" />
+               </HBox.margin>
+            </Label>
+            <ImageView fitHeight="96.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@../image/385496021_292791893519238_8577172701520959440_n.png" />
+               </image>
+            </ImageView>
+            <Button mnemonicParsing="false" onAction="#home" style="-fx-background-color: #354230;" text="Produit" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="80.0" top="50.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#evenement" style="-fx-background-color: #354230;" text="Evenements" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="40.0" top="50.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#activite" style="-fx-background-color: #354230;" text="Activités" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="40.0" top="50.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#reclamation" style="-fx-background-color: #354230;" text="Réclamations" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="40.0" top="50.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#channel" style="-fx-background-color: #354230;" text="Channel" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="40.0" top="50.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <VBox fx:id="slider" layoutY="279.0" prefHeight="362.0" prefWidth="251.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#Retour" prefHeight="31.0" prefWidth="186.0" styleClass="btn" stylesheets="@style.css" text="consulter liste Categorie">
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <ImageView fitHeight="27.0" fitWidth="37.0" layoutX="625.0" layoutY="592.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/380576531_183422748142268_4866864081092424606_n.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

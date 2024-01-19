@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox styleClass="ancho" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.WeatherController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="380.0" prefWidth="400.0" style="-fx-background-color: #ECF2FF;" stylesheets="@../css/style.css">
+         <children>
+            <Pane layoutY="180.0" prefHeight="100.0" prefWidth="400.0" style="-fx-background-color: #2E3335;" styleClass="ancho-pane" stylesheets="@../css/style.css" AnchorPane.bottomAnchor="1.0">
+               <children>
+                  <VBox alignment="CENTER" layoutX="-6.0" prefHeight="100.0" prefWidth="407.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="52.0" text="City" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="villeselct" prefHeight="30.0" prefWidth="133.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="57.0" text="Date" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <DatePicker fx:id="dateselect" prefHeight="30.0" prefWidth="135.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <ImageView fx:id="image" fitHeight="172.0" fitWidth="172.0" layoutX="115.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/02d.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="tempuratureLabel" layoutX="14.0" layoutY="214.0" prefHeight="58.0" prefWidth="125.0" text="23 °C">
+               <font>
+                  <Font name="Calibri" size="40.0" />
+               </font>
+            </Label>
+            <VBox layoutX="320.0" layoutY="199.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #64bae6;" AnchorPane.bottomAnchor="101.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Label fx:id="month" alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="80.0" text="Mars">
+                     <font>
+                        <Font name="Corbel" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="day" alignment="TOP_CENTER" prefHeight="22.0" prefWidth="80.0" text="11">
+                     <font>
+                        <Font name="Arial Narrow" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Label fx:id="etat" layoutX="162.0" layoutY="210.0" prefHeight="33.0" prefWidth="117.0" text="Ensoleillée">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="ville" layoutX="162.0" layoutY="239.0" prefHeight="27.0" prefWidth="131.0" text="Tunisie, Tabarka">
+               <font>
+                  <Font name="Calibri Light" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="load" fitHeight="33.0" fitWidth="31.0" layoutX="360.0" layoutY="7.0" onMouseClicked="#retrieveWeather" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icon-load-19.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

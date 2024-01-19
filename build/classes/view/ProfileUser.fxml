@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="763.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ProfileUserController">
+   <children>
+      <AnchorPane prefHeight="636.0" prefWidth="371.0" style="-fx-background-color: #354230;">
+         <children>
+            <Button fx:id="btnSnap" layoutX="20.0" layoutY="272.0" mnemonicParsing="false" onAction="#btnSnapAction" prefHeight="3.0" prefWidth="111.0" style="-fx-background-color: #a9cb56; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="Capture !" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="239.0" fitWidth="307.0" layoutX="1.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@385496021_292791893519238_8577172701520959440_n.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ImagePreviw" fitHeight="176.0" fitWidth="147.0" layoutX="146.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="Add_image_button" layoutX="8.0" layoutY="98.0" mnemonicParsing="false" onAction="#add_image_action" prefHeight="27.0" prefWidth="123.0" style="-fx-background-color: #a9cb56; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="Add picture" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="prd_photo" layoutX="8.0" layoutY="147.0" mnemonicParsing="false" onAction="#TakePhotoAction" prefHeight="27.0" prefWidth="123.0" style="-fx-background-color: #a9cb56; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="Take picture" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCancel" layoutX="167.0" layoutY="272.0" mnemonicParsing="false" onAction="#cancelCameraOpening" prefHeight="27.0" prefWidth="111.0" style="-fx-background-color: #a9cb56; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="Cancel" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="614.0" prefWidth="485.0">
+         <children>
+            <Label layoutX="27.0" layoutY="152.0" prefHeight="22.0" prefWidth="95.0" text="Username">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="277.0" prefHeight="22.0" prefWidth="79.0" text="Confirm password">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="233.0" prefHeight="22.0" prefWidth="79.0" text="Password">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="192.0" prefHeight="22.0" prefWidth="66.0" text="Email">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="319.0" prefHeight="22.0" prefWidth="31.0" text="Age">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="407.0" prefHeight="22.0" prefWidth="66.0" text="Gender">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField id="tf_inscri_ident" fx:id="tf_modif_ident" layoutX="138.0" layoutY="151.0" prefHeight="23.0" prefWidth="170.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </TextField>
+            <TextField id="tf_inscri_email" fx:id="tf_modif_email" layoutX="138.0" layoutY="191.0" prefHeight="0.0" prefWidth="170.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </TextField>
+            <Button id="btn_inscri_inscri" fx:id="btn_modif_modif" layoutX="69.0" layoutY="487.0" mnemonicParsing="false" onAction="#enregistrer" prefHeight="34.0" prefWidth="153.0" style="-fx-background-color: #a9cb56; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Button>
+            <Line endX="100.0" endY="267.0" layoutX="-100.0" layoutY="346.0" startX="100.0" startY="-346.0" />
+            <TextField id="tf_inscri_age" fx:id="tf_modif_age" layoutX="138.0" layoutY="318.0" prefHeight="23.0" prefWidth="56.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </TextField>
+            <ComboBox fx:id="cb_modif_sx" layoutX="138.0" layoutY="405.0" prefHeight="25.0" prefWidth="170.0" />
+            <Button id="btn_inscri_inscri" fx:id="btn_modif_retour" layoutX="258.0" layoutY="487.0" mnemonicParsing="false" onAction="#Retour" prefHeight="34.0" prefWidth="153.0" style="-fx-background-color: #354230; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="label_us" layoutX="25.0" layoutY="38.0" prefHeight="66.0" prefWidth="427.0" textAlignment="JUSTIFY" textFill="#143600">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="30.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="tf_modif_mdp" layoutX="138.0" layoutY="232.0" prefHeight="25.0" prefWidth="170.0" />
+            <PasswordField fx:id="tf_modif_cfrmmdp" layoutX="138.0" layoutY="276.0" prefHeight="25.0" prefWidth="170.0" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="imageLabel" prefHeight="34.0" prefWidth="71.0" visible="false" />
+   </children>
+</HBox>

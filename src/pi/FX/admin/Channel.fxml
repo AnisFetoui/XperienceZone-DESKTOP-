@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="396.0" prefWidth="685.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pi.controller.ChannelController">
+   <children>
+      <TableView fx:id="channel_tableView" layoutX="330.0" layoutY="50.0" onMouseClicked="#availableChannelSelect" prefHeight="298.0" prefWidth="333.0" stylesheets="@../dashboardDesign.css">
+         <columns>
+            <TableColumn fx:id="column_nom" prefWidth="161.0" text="Nom Channel" />
+            <TableColumn fx:id="column_evenement" prefWidth="180.0" text="Evenement" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txt_nom" layoutX="106.0" layoutY="62.0" />
+      <Label layoutX="20.0" layoutY="64.0" prefHeight="21.0" prefWidth="38.0" text="Titre">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font></Label>
+      <Label layoutY="116.0" text="Evenement">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font></Label>
+      <ComboBox fx:id="combo_evenement" layoutX="110.0" layoutY="109.0" prefHeight="31.0" prefWidth="155.0" />
+      <Button fx:id="btn_update" layoutX="180.0" layoutY="256.0" mnemonicParsing="false" onAction="#updateOnClick" prefHeight="31.0" prefWidth="119.0" styleClass="update-btn" stylesheets="@../dashboardDesign.css" text="  Modifier" />
+      <Button fx:id="btn_add" layoutX="31.0" layoutY="256.0" mnemonicParsing="false" onAction="#addOnClick" prefHeight="31.0" prefWidth="119.0" styleClass="add-btn" stylesheets="@../dashboardDesign.css" text="Ajouter" />
+      <Button fx:id="btn_clear" layoutX="180.0" layoutY="317.0" mnemonicParsing="false" onAction="#clearOnClick" prefHeight="31.0" prefWidth="119.0" styleClass="clear-btn" stylesheets="@../dashboardDesign.css" text="annuler" />
+      <Button fx:id="btn_delete" layoutX="31.0" layoutY="317.0" mnemonicParsing="false" onAction="#deleteOnClick" prefHeight="31.0" prefWidth="119.0" styleClass="delete-btn" stylesheets="@../dashboardDesign.css" text="   Supprimer" />
+      <Separator layoutX="5.0" layoutY="84.0" prefHeight="6.0" prefWidth="67.0" />
+      <Separator layoutX="1.0" layoutY="137.0" prefHeight="6.0" prefWidth="77.0" />
+      <ImageView fitHeight="21.0" fitWidth="27.0" layoutX="39.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/aj.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="21.0" layoutX="189.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/annu-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="187.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/mod.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="21.0" fitWidth="38.0" layoutX="39.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/poubelle-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

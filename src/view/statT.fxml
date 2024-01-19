@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="662.0" prefWidth="914.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.StatTController">
+   <children>
+      <Text fill="#74da39" layoutX="292.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Statistiques Traitements " underline="true" wrappingWidth="330.32421875">
+         <font>
+            <Font name="Bodoni MT Poster Compressed" size="51.0" />
+         </font>
+      </Text>
+      <Text fx:id="statTXTT" layoutX="107.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="345.6708984375">
+         <font>
+            <Font name="Berlin Sans FB" size="19.0" />
+         </font>
+      </Text>
+      <Button fx:id="retourSTAT" layoutX="793.0" layoutY="599.0" mnemonicParsing="false" onAction="#retourHome_rec" prefHeight="34.0" prefWidth="80.0" style="-fx-background-color: #28282B; -fx-cursor: hand;" styleClass="add-btn" stylesheets="@style.css" text="Retour" textFill="#e8dddd">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Button>
+      <PieChart fx:id="piechart" layoutX="414.0" layoutY="145.0" prefHeight="399.0" prefWidth="477.0" />
+   </children>
+</AnchorPane>

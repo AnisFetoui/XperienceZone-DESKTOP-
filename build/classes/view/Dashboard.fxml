@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane prefHeight="404.0" prefWidth="685.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.DashboardController">
+   <children>
+      <StackPane fx:id="stackPanePositive" layoutX="56.0" layoutY="68.0" prefHeight="207.0" prefWidth="284.0" />
+      <StackPane fx:id="stackPaneNegative" layoutX="359.0" layoutY="68.0" prefHeight="207.0" prefWidth="275.0" />
+   </children>
+</AnchorPane>

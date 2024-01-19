@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="607.0" prefWidth="998.0" style="-fx-background-image: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.GestionCategorieController">
+   <children>
+      <TableView fx:id="tableview" layoutX="451.0" layoutY="103.0" onSort="#afficher" prefHeight="430.0" prefWidth="546.0">
+        <columns>
+            <TableColumn fx:id="id_categ" prefWidth="109.0" text="id_categorie" />
+          <TableColumn fx:id="nom_categ" prefWidth="138.0" text="nom categorie" />
+            <TableColumn fx:id="des_col" prefWidth="153.0" text="description categorie" />
+            <TableColumn fx:id="type_col" prefWidth="145.0" text="type categorie" />
+        </columns>
+      </TableView>
+      <Button fx:id="produit_btn" layoutX="457.0" layoutY="553.0" mnemonicParsing="false" onAction="#Retour" prefHeight="31.0" prefWidth="156.0" styleClass="btn1" stylesheets="@style.css" text="Nos produit" />
+      <HBox layoutX="-3.0" prefHeight="100.0" prefWidth="1006.0" style="-fx-background-color: #354230;">
+         <children>
+            <Label fx:id="menu" onMouseClicked="#onmenuclicked" text="MENU" textFill="#58d323">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="50.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="menuclose" onMouseClicked="#onmenuclickedclose" text="ME..." textFill="#68ee33">
+               <HBox.margin>
+                  <Insets left="-60.0" top="50.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="90.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@../image/385496021_292791893519238_8577172701520959440_n.png" />
+               </image>
+            </ImageView>
+            <Button mnemonicParsing="false" onAction="#Produit" style="-fx-background-color: #354230;" text="Produit" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="180.0" top="40.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#evenement" style="-fx-background-color: #354230;" text="Evenemnts" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="40.0" top="40.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#activite" style="-fx-background-color: #354230;" text="Activités" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="40.0" top="40.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#reclamation" style="-fx-background-color: #354230;" text="Réclamations" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="40.0" top="40.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#channel" style="-fx-background-color: #354230;" text="Channel" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="30.0" top="40.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <VBox fx:id="slider" layoutY="100.0" prefHeight="505.0" prefWidth="251.0" styleClass="slider-back" stylesheets="@style.css">
+         <children>
+            <TextField fx:id="chercher_categ" maxWidth="200.0" prefHeight="31.0" prefWidth="88.0" promptText="chercher ici" styleClass="field_text" stylesheets="@style.css">
+               <VBox.margin>
+                  <Insets top="80.0" />
+               </VBox.margin>
+            </TextField>
+            <Button fx:id="cherchercat" mnemonicParsing="false" onAction="#chercherCategorie" prefHeight="31.0" prefWidth="142.0" styleClass="btn" stylesheets="@style.css" text="chercher">
+               <VBox.margin>
+                  <Insets left="50.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/386881331_847460750314905_6997037616886393556_n.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="150.0" top="-30.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button fx:id="afficher" mnemonicParsing="false" onAction="#afficher" prefHeight="31.0" prefWidth="179.0" styleClass="btn" stylesheets="@style.css" text="actualiser">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/380510015_290329247260811_7658397812206885559_n.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="130.0" top="-30.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button fx:id="ajouter" mnemonicParsing="false" onAction="#ajouterCategorie" prefHeight="31.0" prefWidth="180.0" styleClass="btn" stylesheets="@style.css" text="ajouter">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/380576531_183422748142268_4866864081092424606_n.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="130.0" top="-30.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button fx:id="modifier" mnemonicParsing="false" onAction="#modifierCategorie" prefHeight="31.0" prefWidth="180.0" styleClass="btn" stylesheets="@style.css" text="modifier">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/384549712_2549209051927760_3172543082921598683_n.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="130.0" top="-30.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button fx:id="supprimer" mnemonicParsing="false" onAction="#supprimerCategorie" prefHeight="31.0" prefWidth="179.0" styleClass="btn" stylesheets="@style.css" text="supprimer">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/380267188_1363539364578928_2753920115917350912_n.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="130.0" top="-30.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+      </VBox>
+      <ImageView fitHeight="30.0" fitWidth="32.0" layoutX="583.0" layoutY="554.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/380146662_3360198300945846_3834982364805225730_n.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
